@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+
+
+html {
+    height: 200vh;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-link img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.logo-link:hover img {
+    transform: scale(1.1);
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.navbar ul a:hover {
+    color: #3399ff;
+}
+
+.navbar ul a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 90px;
+}
+
+.navbar ul a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .3s;
+}
+
+
+.navbar ul a:hover::before {
+    width: 100%;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #3399ff;
+    transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    background-color: #000000;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    margin: 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5a67d8;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #434bbd;
+    transform: scale(1.1);
+}
+
+.hero-image img {
+    padding-top: 70px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 10px;
+    margin: 30px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 365px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    box-shadow: rgba(255, 255, 255, 0.445) 0px 10px 20px, rgba(255, 255, 255, 0.432) 0px 6px 6px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #ffffff;
+}
+
+.card>img {
+    margin-left: 100px;
+    background-color: #ffffff;
+    width: 70px;
+}
+
+.card>h1 {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.card>p {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.features {
+    padding: 10px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.features h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.features p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+}

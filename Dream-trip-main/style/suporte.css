@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+
+
+html {
+    height: 200vh;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.logo-link img {
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.logo-link:hover img {
+    transform: scale(1.1);
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.navbar ul a:hover {
+    color: #3399ff;
+}
+
+.navbar ul a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 90px;
+}
+
+.navbar ul a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: .3s;
+}
+
+
+.navbar ul a:hover::before {
+    width: 100%;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.login-button:hover {
+    background-color: #3399ff;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #11111100;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.aside {
+   
+
+ 
+    width: 100vw; /* Ocupa 100% da largura da viewport */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    display: flex; /* Centraliza conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: -1; /* Coloca a imagem atrás do restante do conteúdo */
+}
+
+.aside img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura */
+    height: 100%; /* Faz a imagem ocupar 100% da altura */
+    object-fit: cover; /* Faz a imagem cobrir a área mantendo as proporções */
+}
+
+.title-suporte {
+    font-size: 35px;
+    display: block; /* Garante que o elemento seja exibido */
+    text-align: center; /* Centraliza horizontalmente */
+    margin: 20px auto; /* Adiciona espaçamento e centraliza o bloco */
+    font-family: Arial, sans-serif; /* Define a fonte */
+    color: #fff; /* Define a cor do texto */
+   
+}
+.ul-suporte {
+    width: 150px; /* Define a largura */
+    height: 150px; /* Define a altura */
+    margin: 50px 0 0 50px; /* Adiciona 50px do topo e do lado esquerdo */
+    padding: 0; /* Remove qualquer padding */
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Alinha os itens internamente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: transparent; /* Garante que não há cor de fundo */
+    border-radius: 20px; /* Arredonda as bordas do contêiner */
+}
+
+.ul-suporte img {
+    width: 100%; /* Aumenta a largura da imagem em relação ao contêiner */
+    height: 100%; /* Aumenta a altura da imagem em relação ao contêiner */
+    object-fit: cover; /* Mantém as proporções da imagem */
+    display: block; /* Remove qualquer espaço extra */
+    border-radius: 20px; /* Arredonda as bordas da imagem */
+}
+
+
+.ul-suporte li {
+    width: 150px; /* Define a largura fixa do item */
+    height: 150px; /* Define a altura fixa do item */
+    position: relative; /* Posiciona o item de forma relativa */
+    left: 50px; /* Move o item 50px para a direita */
+    border-radius: 20px; /* Arredonda as bordas do item */
+}
+
+h3 {
+    color: #fff; /* Defina a cor do título */
+    font-size: 16px; /* Ajuste o tamanho da fonte do título */
+    margin-top: 15px; /* Adiciona espaço entre a imagem e o título */
+    width: 150px; /* Define a largura fixa do item */
+    height: 150px; /* Define a altura fixa do item */
+    position: relative; /* Posiciona o item de forma relativa */
+    left: 95px; /* Move o item 50px para a direita */
+}
